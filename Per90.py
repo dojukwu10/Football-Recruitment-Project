@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('PlayerDataRaw.csv')
 
 # Choose the column by which you want to divide all other columns
-divisor_column = '90s'  # Replace with the actual column name
+divisor_column = '90s'
 
 # Divide all other columns by the specified column
 # Convert columns to numeric (assuming columns 1 and onwards are numeric)
