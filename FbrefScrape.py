@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 from urllib.request import urlopen
 import re
-import requests
+# import requests
 import time
 
 def getReports():
@@ -15,7 +15,7 @@ def getReports():
     counter = 0
     counter2= 0
     # Open the URL and extract the HTML and write it to a new file
-    html = urlopen('https://fbref.com/en/comps/9/stats/Premier-League-Stats#stats_squads_standard_for')
+    html = urlopen('https://fbref.com/en/comps/12/stats/La-Liga-Stats')
     bs = BeautifulSoup(html, 'html.parser').encode()
 
     with open("data1.html", "w") as file:
